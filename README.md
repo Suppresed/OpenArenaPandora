@@ -17,6 +17,7 @@ This version is aimed at OpenPandra, so get:
  * Toggle Crouch function (using -DCROUCH), disabled by default and with a new option in cfg
  * OpenPandora support of course (using `-DPANDORA`), for screen resolution mainly.
  * ODROID support (build with `make ODROID=1`), mostly like Pandora, but without the control and resolution hack
+ * DROID4 ditto
  * RPI support (build with `make RPI=1`), same as ODROID (will not work for RPI 1, has NEON support is compiled in)
 
 
