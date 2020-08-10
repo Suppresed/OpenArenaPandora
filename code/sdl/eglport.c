@@ -65,7 +65,7 @@ static int use_srgb = 1;
 
 enum EGL_RENDER_T {
     RENDER_RAW=0,           /** Sets render mode to raw or framebuffer mode. */
-    RENDER_SDL,             /** Sets render mode to X11/SDL mode. */
+    RENDER_SDL=1,             /** Sets render mode to X11/SDL mode. */
     RENDER_TOTAL
 };
 
@@ -300,7 +300,7 @@ int8_t EGL_Open( uint16_t width, uint16_t height )
         return 1;
     }
 
-    eglSurface = peglCreateWindowSurface( eglDisplay, eglConfigs[configIndex], nativeWindow, sRGB );
+    eglSurface = peglCreateWindowSurface( eglDisplay, eglConfigs[configIndex], nativeWindow, NULL );
     if (eglSurface == EGL_NO_SURFACE)
     {
         CheckEGLErrors( __FILE__, __LINE__ );
