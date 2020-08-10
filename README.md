@@ -7,7 +7,7 @@ The current state is playable without any major problems and good performances.
 Only limits are len flares that requires depth buffer reading and so are disabled.
 Note that this version integrate a QVM with a JIT backend on ARM, so bots doesn't slow down the games too much.
 
-OpenPandora / ODroid / RPi
+OpenPandora / ODroid / RPi / Droid 4
 ===========
 
 This version is aimed at OpenPandra, so get:
