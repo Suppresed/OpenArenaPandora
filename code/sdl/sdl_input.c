@@ -290,7 +290,7 @@ static const char *IN_TranslateSDLToQ3Key( SDL_keysym *keysym,
 			case SDLK_LMETA:        *key = K_COMMAND;       break;
 
 			case SDLK_RALT:
-			case SDLK_LALT:         *key = K_ALT;           break;
+			case SDLK_LALT:         *key = K_ESCAPE;           break;
 
 			case SDLK_LSUPER:
 			case SDLK_RSUPER:       *key = K_SUPER;         break;
